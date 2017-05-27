@@ -7,8 +7,8 @@ import GUI.components.Panels;
  */
 public class LoginPanel extends Panels {
 
-    public LoginPanel() {
-        super();
+    public LoginPanel(int width, int height, int x, int y) {
+        super(width, height, x, y);
     }
 
 

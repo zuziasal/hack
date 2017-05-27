@@ -4,12 +4,9 @@ package connector;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-/**
- * Created by oogway on 27.05.17.
- */
-public class DBConnector {
-    Connection conn = null;
 
+public class DBConnector {
+    private Connection conn = null;
     public void connect() {
         try {
             String userName = "root";
@@ -30,6 +27,5 @@ public class DBConnector {
             }
         }
     }
-
 }
 

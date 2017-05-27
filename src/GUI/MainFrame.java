@@ -1,10 +1,10 @@
 package GUI;
 
+import GUI.components.panels.LoginPanel;
+
 import javax.swing.*;
 
-/**
- * Created by oogway on 27.05.17.
- */
+
 public class MainFrame extends JFrame {
     public MainFrame() {
         this.setSize(400, 600);
@@ -13,5 +13,7 @@ public class MainFrame extends JFrame {
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         this.repaint();
+        LoginPanel loginPanel = new LoginPanel(350, 450, 10, 10);
+        this.add(loginPanel);
     }
 }
